@@ -1,0 +1,36 @@
+@media screen and (orientation: portrait) {
+  body {
+    height: 90vh;
+    width: 100vw;
+    padding-top: 10%;
+  }
+  
+  #img img {
+    display: none;
+  }
+
+  section#calculadora {
+    height: 90%;
+    width: 80vw;
+  }
+  form {
+     padding: 0px;
+  }
+  input {
+    width: 100%;
+  }
+  div.input-field {
+    width: 100%;
+  }
+  div#result {
+    font-size: 0.8em;
+    flex-flow: row nowrap;
+  }
+  a {
+    margin-bottom: 0px;
+  }
+
+  span#numvalue {
+    font-size: 4em;
+  }
+}
