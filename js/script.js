@@ -35,11 +35,13 @@ function calcular(){
   let altura = parseFloat(txtaltura.value.replace(',','.'))
   let imc = peso/(altura**2)
   let mensagem = ' '
+  analise.style.color = 'red'
   if (txtpeso.value.length == 0 || txtaltura.value.length == 0) {
     alert('[ERRO!] Preencha os dados para calcular!')
   } else if (imc <= 18.5) { // Abaixo do normal
     mensagem = 'Abaixo do normal'
   } else if (imc <= 24.9){ // Normal
+    analise.style.color = '#16a34a'
     mensagem = 'Você esta no peso ideal!'
   } else if (imc <= 29.9){ // Sobrepeso
     mensagem = 'Sobrepeso'
